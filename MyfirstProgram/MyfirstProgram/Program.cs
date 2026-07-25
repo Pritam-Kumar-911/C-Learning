@@ -68,30 +68,42 @@ Console.WriteLine(value);
 
 
 //Enter a number 
-Console.WriteLine("Enter a Number X:");
-int value1 = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Enter a Number X:");
+//int value1 = Convert.ToInt32(Console.ReadLine());
 
-for (int i = 1; i <= value1; i++)
+//for (int i = 1; i <= value1; i++)
+//{
+
+//    if (i % 3 == 0 && i % 5 == 0)
+//    {
+//        Console.WriteLine("FizzBuzz");
+//    }
+
+//    else if (i % 3 == 0)
+//    {
+//        Console.WriteLine("Fizz");
+//    }
+//    else if (i % 5 == 0)
+//    {
+//        Console.WriteLine("Buzz");
+//    }
+//    else
+//    {
+//        Console.WriteLine(i);
+//    }
+//}
+
+//iterating over a string 
+String male = "Hello this is pritam";
+
+for (int i = male.Length-1; i >= 0; i--)
 {
-
-    if (i % 3 == 0 && i % 5 == 0)
-    {
-        Console.WriteLine("FizzBuzz");
-    }
-
-    else if (i % 3 == 0)
-    {
-        Console.WriteLine("Fizz");
-    }
-    else if (i % 5 == 0)
-    {
-        Console.WriteLine("Buzz");
-    }
-    else
-    {
-        Console.WriteLine(i);
-    }
+    Console.Write(male[i]);
+    Thread.Sleep(100);
 }
+
+
+
 
 
 
